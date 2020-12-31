@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <link rel="stylesheet" href="./static/style.css">
+</head>
+<body>
+     <div class="container">
+        <h1>Super Geocoder</h1>
+        <h2>Please upload CSV file. The values containing addresses should be in a column named Address or address</h2>
+             {{text | safe}}
+        <form action="http://127.0.0.1:5000/upload" , method="POST", enctype="multipart/form-data" >
+            <input type="file" , name="file">
+            <button type="submit">Submit</button>
+        </form>
+         <div>
+             {{table | safe}}
+         </div>
+         <div>
+             {% include button ignore missing %}
+         </div>
+     </div>
+</body>
+</html>

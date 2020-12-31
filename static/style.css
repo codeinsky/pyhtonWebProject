@@ -1,0 +1,27 @@
+html {
+background-color:#5BC85B;
+}
+
+button{
+width:80px
+}
+
+.container {
+margin: 50px;
+text-align:center;}
+
+.container h1{
+margin:40px;
+}
+
+table {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+
+.container button {
+background-color: #00BFFF;
+width:60px;
+height:40px;}
